@@ -5,4 +5,4 @@ arguments and returns a concatenated string."""
 
 def concat(str1: str, str2: str) -> str:
     """Concatenate two strings and return the result as a string."""
-    return srt1 + str2
+    return str1 + str2
