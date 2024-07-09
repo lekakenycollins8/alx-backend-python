@@ -4,10 +4,11 @@
 
 import asyncio
 import random
+from typing import Generator
 
 
-async def async_generator() -> float:
+async def async_generator() -> Generator[float, None, None]:
     """generates a random integer between 0 and 10"""
-    for _ in range(10):
+    for i in range(10):
         await asyncio.sleep(1)
-        yield random.uniform(0, 10)
+        yield random.random() * 10
